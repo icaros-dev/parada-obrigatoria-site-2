@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parada Obrigatória Bar e Petiscaria — cerveja gelada, petiscos, caipirinha, caipiroska e som ao vivo.">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="brand" aria-label="Parada Obrigatória">
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/logo.png')); ?>" alt="Parada Obrigatória Bar e Petiscaria">
+            </a>
+
+            <nav class="nav" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#inauguracao">Inauguração</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <p class="eyebrow">BAR &amp; PETISCARIA</p>
+
+                <h1>
+                    Sua <span>Parada</span><br>
+                    é <span>Obrigatória!</span>
+                </h1>
+
+                <p class="hero-text">
+                    Cerveja gelada, petiscos, drinks e aquele clima perfeito
+                    para reunir a galera.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+                    <a href="#localizacao" class="btn btn-outline">Como chegar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container highlight-grid">
+                <article class="highlight-card">
+                    <span class="icon">🍺</span>
+                    <h3>Cerveja gelada</h3>
+                    <p>Para brindar com os amigos e aproveitar a noite.</p>
+                </article>
+
+                <article class="highlight-card">
+                    <span class="icon">🍢</span>
+                    <h3>Petiscos</h3>
+                    <p>Porções para compartilhar ou matar a fome sozinho.</p>
+                </article>
+
+                <article class="highlight-card">
+                    <span class="icon">🍹</span>
+                    <h3>Drinks</h3>
+                    <p>Caipirinha, caipiroska e outras opções para sua noite.</p>
+                </article>
+
+                <article class="highlight-card">
+                    <span class="icon">🎵</span>
+                    <h3>Som ao vivo</h3>
+                    <p>Música para deixar a experiência ainda mais especial.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cardapio" class="section section-dark">
+            <div class="container">
+                <div class="section-title">
+                    <span>🍽️</span>
+                    <p>Confira nossas opções</p>
+                    <h2>Nosso <strong>Cardápio</strong></h2>
+                </div>
+
+                <div class="menu-intro">
+                    <p>
+                        Escolha sua porção, bebida ou drink e venha curtir a
+                        <strong>Parada Obrigatória</strong>.
+                    </p>
+                    <span>📸 Clique em qualquer imagem para ampliar</span>
+                </div>
+
+                <div class="menu-photo-grid">
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-01.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-01.jpg')); ?>" alt="Carne de Sol com Aipim — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Carne de Sol com Aipim</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-02.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-02.jpg')); ?>" alt="Carne de Sol com Purê de Aipim — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Carne de Sol com Purê de Aipim</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-03.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-03.jpg')); ?>" alt="Filé com Fritas — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Filé com Fritas</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-04.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-04.jpg')); ?>" alt="Tripas com Farofa — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Tripas com Farofa</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-05.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-05.jpg')); ?>" alt="Calabresa Acebolada — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Calabresa Acebolada</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-06.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-06.jpg')); ?>" alt="Isca de Frango com Molho Rosé — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Isca de Frango com Molho Rosé</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-07.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-07.jpg')); ?>" alt="Carne de Sol com Fritas — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Carne de Sol com Fritas</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-08.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-08.jpg')); ?>" alt="Arrumadinho — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Arrumadinho</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-09.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-09.jpg')); ?>" alt="Jabá com Farofa d'Água — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Jabá com Farofa d'Água</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-10.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-10.jpg')); ?>" alt="Costela Suína Acebolada — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Costela Suína Acebolada</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-11.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-11.jpg')); ?>" alt="Frango à Passarinho — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Frango à Passarinho</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-12.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-12.jpg')); ?>" alt="Carne de Sol, Salada e Farofa — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Porções</span>
+                            <h3>Carne de Sol, Salada e Farofa</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-13.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-13.jpg')); ?>" alt="Quibe, Coxinha e Pastel — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Petiscos</span>
+                            <h3>Quibe, Coxinha e Pastel</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-14.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-14.jpg')); ?>" alt="Batata Frita e Batatas Especiais — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Petiscos</span>
+                            <h3>Batata Frita e Batatas Especiais</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-15.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-15.jpg')); ?>" alt="Espetinhos e Pão de Alho — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Espetinhos</span>
+                            <h3>Espetinhos e Pão de Alho</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-16.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-16.jpg')); ?>" alt="Cervejas — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Bebidas</span>
+                            <h3>Cervejas</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-17.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-17.jpg')); ?>" alt="Espetinhos e Pão de Alho — opções — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Espetinhos</span>
+                            <h3>Espetinhos e Pão de Alho — opções</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-18.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-18.jpg')); ?>" alt="Destilados — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Bebidas</span>
+                            <h3>Destilados</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-19.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-19.jpg')); ?>" alt="Refrigerantes e Sem Álcool — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Bebidas</span>
+                            <h3>Refrigerantes e Sem Álcool</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-20.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-20.jpg')); ?>" alt="Energéticos — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Bebidas</span>
+                            <h3>Energéticos</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-21.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-21.jpg')); ?>" alt="Long Neck — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Bebidas</span>
+                            <h3>Long Neck</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-22.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-22.jpg')); ?>" alt="Caipirinhas e Drinks — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Drinks</span>
+                            <h3>Caipirinhas e Drinks</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-23-caldos.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-23-caldos.jpg')); ?>" alt="Caldo de Camarão, Vaca Atolada e Sururu — Parada Obrigatória">
+                        <div class="menu-photo-caption">
+                            <span>Caldo</span>
+                            <h3>Caldo de Camarão, Vaca Atolada e Sururu</h3>
+                            <small>Toque/clique para ampliar</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="inauguracao" class="section inauguration">
+            <div class="container inauguration-grid">
+                <div class="inauguration-text">
+                    <p class="section-label">É hora de comemorar!</p>
+
+                    <h2>
+                        <span>INAUGURAÇÃO</span><br>
+                        Parada Obrigatória
+                    </h2>
+
+                    <p>
+                        Prepare-se para uma noite especial com música,
+                        bebidas e muita resenha.
+                    </p>
+
+                    <div class="event-info">
+                        <div>
+                            <strong>📅 02 de outubro</strong>
+                            <span>Data da inauguração</span>
+                        </div>
+
+                        <div>
+                            <strong>🎵 Som ao vivo</strong>
+                            <span>Para animar a noite</span>
+                        </div>
+
+                        <div>
+                            <strong>🍹 Caipirinha e caipiroska em dobro</strong>
+                            <span>Até meia-noite</span>
+                        </div>
+                    </div>
+
+                    <a href="#localizacao" class="btn btn-primary">Quero conhecer</a>
+                </div>
+
+                <div class="inauguration-image">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/assets/card-inauguracao.jpg')); ?>" alt="Card da inauguração do Parada Obrigatória Bar e Petiscaria">
+                </div>
+            </div>
+        </section>
+
+        <section id="localizacao" class="section location">
+            <div class="container">
+                <div class="section-title">
+                    <span>📍</span>
+                    <p>Venha nos visitar</p>
+                    <h2>Como <strong>chegar</strong></h2>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-info">
+                        <div class="location-icon">📍</div>
+
+                        <div>
+                            <h3>Parada Obrigatória</h3>
+                            <p>Bar e Petiscaria</p>
+
+                            <p class="address">
+                                <strong>Endereço:</strong><br>
+                                2º TV Manoel Chaves, 2359<br>
+                                São Caetano
+                            </p>
+
+                            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=2%C2%BA+TV+Manoel+Chaves+2359+S%C3%A3o+Caetano" target="_blank" rel="noopener noreferrer">
+                                📍 Abrir no Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <span>📍</span>
+                        <p>Seu mapa aparecerá aqui</p>
+                        <small>
+                            Se quiser, depois podemos colocar o mapa
+                            interativo do Google Maps nesta área.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/logo.png')); ?>" alt="Parada Obrigatória" class="footer-logo">
+
+            <p>Parada Obrigatória — Bar e Petiscaria</p>
+
+            <p class="copyright">
+                © <?php echo date('Y'); ?> Parada Obrigatória. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5571999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Parada%20Obrigat%C3%B3ria." class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">💬</a>
+
+    <?php wp_footer(); ?>
+</body>
+</html>
