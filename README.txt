@@ -4,13 +4,20 @@ Estrutura:
 - index.html
 - style.css
 - assets/logo.png
-- assets/card-inauguracao.jpg
+- assets/programacao/evento-destaque.jpg (imagem do evento em destaque)
 - assets/cardapio/cardapio-comidas.jpg e cardapio-bebidas.jpg (cardápio original em imagem)
 
 O cardápio aparece em texto (itens e preços), dividido em Comidas e Bebidas.
 Para mudar um preço, edite o valor direto na seção CARDÁPIO do index.html
 (e também no index.php do tema WordPress).
 No fim da seção há botões para abrir o cardápio original em imagem.
+
+PROGRAMAÇÃO DA SEMANA:
+- Para trocar o evento em destaque, substitua assets/programacao/evento-destaque.jpg
+  e edite os textos do bloco "agenda-destaque" no index.html.
+- Cada dia da semana é um "agenda-dia" no index.html. O dia de hoje
+  ganha a etiqueta HOJE automaticamente.
+- Faça as mesmas mudanças no index.php do tema WordPress.
 
 Para testar:
 1. Abra esta pasta no VS Code.

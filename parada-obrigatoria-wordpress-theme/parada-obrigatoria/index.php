@@ -16,8 +16,8 @@
 
             <nav class="nav" aria-label="Menu principal">
                 <a href="#inicio">Início</a>
+                <a href="#programacao">Programação</a>
                 <a href="#cardapio">Cardápio</a>
-                <a href="#inauguracao">Inauguração</a>
                 <a href="#localizacao">Localização</a>
             </nav>
         </div>
@@ -75,8 +75,83 @@
             </div>
         </section>
 
-        <!-- ==================== CARDÁPIO ==================== -->
-        <!-- ==================== CARDÁPIO ==================== -->
+        <!-- ==================== PROGRAMAÇÃO DA SEMANA ==================== -->
+        <section id="programacao" class="section agenda">
+            <div class="container">
+
+                <div class="section-title">
+                    <span>🎶</span>
+                    <p>Toda semana tem resenha</p>
+                    <h2>Programação da <strong>Semana</strong></h2>
+                </div>
+
+                <!-- Destaque: troque a imagem e os textos a cada evento -->
+                <article class="agenda-destaque">
+                    <a class="agenda-destaque-img" href="<?php echo esc_url(get_theme_file_uri('/assets/programacao/evento-destaque.jpg')); ?>" target="_blank" rel="noopener">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/programacao/evento-destaque.jpg')); ?>" alt="Hoje tem Flamengo: Flamengo x Santos às 19h30 no Parada Obrigatória">
+                    </a>
+
+                    <div class="agenda-destaque-info">
+                        <p class="section-label">Quinta-feira, 08 de outubro</p>
+                        <h3>Hoje tem Flamengo! Flamengo x Santos</h3>
+                        <p>Aqui é futebol, cerveja e boa companhia! Venha assistir ao jogo com a gente. Vamo, Mengão!</p>
+
+                        <div class="event-info">
+                        <div>
+                            <strong>⚽ Flamengo x Santos</strong>
+                            <span>Jogo do dia</span>
+                        </div>
+                        <div>
+                            <strong>🕢 19h30</strong>
+                            <span>Horário da partida</span>
+                        </div>
+                        <div>
+                            <strong>🍺 Já garanta sua gelada</strong>
+                            <span>Cerveja gelada a noite toda</span>
+                        </div>
+                        </div>
+
+                        <a href="#localizacao" class="btn btn-primary">Como chegar</a>
+                    </div>
+                </article>
+
+                <!-- Semana: data-dia segue o JavaScript (0 = domingo, 1 = segunda ... 6 = sábado) -->
+                <div class="agenda-semana">
+                    <article class="agenda-dia sem-evento" data-dia="1">
+                        <h4>Segunda</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="2">
+                        <h4>Terça</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="3">
+                        <h4>Quarta</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia" data-dia="4">
+                        <h4>Quinta</h4>
+                        <strong>Flamengo x Santos</strong>
+                        <span>⚽ 19h30</span>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="5">
+                        <h4>Sexta</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="6">
+                        <h4>Sábado</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="0">
+                        <h4>Domingo</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+
         <!-- ==================== CARDÁPIO ==================== -->
         <section id="cardapio" class="section section-dark">
             <div class="container">
@@ -445,47 +520,6 @@
             </div>
         </section>
 
-        <section id="inauguracao" class="section inauguration">
-            <div class="container inauguration-grid">
-                <div class="inauguration-text">
-                    <p class="section-label">É hora de comemorar!</p>
-
-                    <h2>
-                        <span>INAUGURAÇÃO</span><br>
-                        Parada Obrigatória
-                    </h2>
-
-                    <p>
-                        Prepare-se para uma noite especial com música,
-                        bebidas e muita resenha.
-                    </p>
-
-                    <div class="event-info">
-                        <div>
-                            <strong>📅 02 de outubro</strong>
-                            <span>Data da inauguração</span>
-                        </div>
-
-                        <div>
-                            <strong>🎵 Som ao vivo</strong>
-                            <span>Para animar a noite</span>
-                        </div>
-
-                        <div>
-                            <strong>🍹 Caipirinha e caipiroska em dobro</strong>
-                            <span>Até meia-noite</span>
-                        </div>
-                    </div>
-
-                    <a href="#localizacao" class="btn btn-primary">Quero conhecer</a>
-                </div>
-
-                <div class="inauguration-image">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/assets/card-inauguracao.jpg')); ?>" alt="Card da inauguração do Parada Obrigatória Bar e Petiscaria">
-                </div>
-            </div>
-        </section>
-
         <section id="localizacao" class="section location">
             <div class="container">
                 <div class="section-title">
@@ -542,5 +576,12 @@
     <a href="https://wa.me/5571999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Parada%20Obrigat%C3%B3ria." class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">💬</a>
 
     <?php wp_footer(); ?>
+    <script>
+        // Destaca o dia de hoje na Programação da Semana
+        (function () {
+            var hoje = document.querySelector('.agenda-dia[data-dia="' + new Date().getDay() + '"]');
+            if (hoje) hoje.classList.add('is-hoje');
+        })();
+    </script>
 </body>
 </html>

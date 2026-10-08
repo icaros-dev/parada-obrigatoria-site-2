@@ -20,8 +20,8 @@
 
             <nav class="nav">
                 <a href="#inicio">Início</a>
+                <a href="#programacao">Programação</a>
                 <a href="#cardapio">Cardápio</a>
-                <a href="#inauguracao">Inauguração</a>
                 <a href="#localizacao">Localização</a>
             </nav>
 
@@ -83,6 +83,83 @@
                     <h3>Som ao vivo</h3>
                     <p>Música para deixar a experiência ainda mais especial.</p>
                 </article>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== PROGRAMAÇÃO DA SEMANA ==================== -->
+        <section id="programacao" class="section agenda">
+            <div class="container">
+
+                <div class="section-title">
+                    <span>🎶</span>
+                    <p>Toda semana tem resenha</p>
+                    <h2>Programação da <strong>Semana</strong></h2>
+                </div>
+
+                <!-- Destaque: troque a imagem e os textos a cada evento -->
+                <article class="agenda-destaque">
+                    <a class="agenda-destaque-img" href="assets/programacao/evento-destaque.jpg" target="_blank" rel="noopener">
+                        <img src="assets/programacao/evento-destaque.jpg" alt="Hoje tem Flamengo: Flamengo x Santos às 19h30 no Parada Obrigatória">
+                    </a>
+
+                    <div class="agenda-destaque-info">
+                        <p class="section-label">Quinta-feira, 08 de outubro</p>
+                        <h3>Hoje tem Flamengo! Flamengo x Santos</h3>
+                        <p>Aqui é futebol, cerveja e boa companhia! Venha assistir ao jogo com a gente. Vamo, Mengão!</p>
+
+                        <div class="event-info">
+                        <div>
+                            <strong>⚽ Flamengo x Santos</strong>
+                            <span>Jogo do dia</span>
+                        </div>
+                        <div>
+                            <strong>🕢 19h30</strong>
+                            <span>Horário da partida</span>
+                        </div>
+                        <div>
+                            <strong>🍺 Já garanta sua gelada</strong>
+                            <span>Cerveja gelada a noite toda</span>
+                        </div>
+                        </div>
+
+                        <a href="#localizacao" class="btn btn-primary">Como chegar</a>
+                    </div>
+                </article>
+
+                <!-- Semana: data-dia segue o JavaScript (0 = domingo, 1 = segunda ... 6 = sábado) -->
+                <div class="agenda-semana">
+                    <article class="agenda-dia sem-evento" data-dia="1">
+                        <h4>Segunda</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="2">
+                        <h4>Terça</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="3">
+                        <h4>Quarta</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia" data-dia="4">
+                        <h4>Quinta</h4>
+                        <strong>Flamengo x Santos</strong>
+                        <span>⚽ 19h30</span>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="5">
+                        <h4>Sexta</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="6">
+                        <h4>Sábado</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                    <article class="agenda-dia sem-evento" data-dia="0">
+                        <h4>Domingo</h4>
+                        <strong>Programação em breve</strong>
+                    </article>
+                </div>
 
             </div>
         </section>
@@ -457,54 +534,6 @@
         </section>
 
 
-        <!-- ==================== INAUGURAÇÃO ==================== -->
-        <section id="inauguracao" class="section inauguration">
-            <div class="container inauguration-grid">
-
-                <div class="inauguration-text">
-                    <p class="section-label">É hora de comemorar!</p>
-
-                    <h2>
-                        <span>INAUGURAÇÃO</span><br>
-                        Parada Obrigatória
-                    </h2>
-
-                    <p>
-                        Prepare-se para uma noite especial com música,
-                        bebidas e muita resenha.
-                    </p>
-
-                    <div class="event-info">
-                        <div>
-                            <strong>📅 02 de outubro</strong>
-                            <span>Data da inauguração</span>
-                        </div>
-
-                        <div>
-                            <strong>🎵 Som ao vivo</strong>
-                            <span>Para animar a noite</span>
-                        </div>
-
-                        <div>
-                            <strong>🍹 Caipirinha e caipiroska em dobro</strong>
-                            <span>Até meia-noite</span>
-                        </div>
-                    </div>
-
-                    <a href="#localizacao" class="btn btn-primary">
-                        Quero conhecer
-                    </a>
-                </div>
-
-                <div class="inauguration-image">
-                    <img src="assets/card-inauguracao.jpg"
-                         alt="Card da inauguração do Parada Obrigatória Bar e Petiscaria">
-                </div>
-
-            </div>
-        </section>
-
-
         <!-- ==================== LOCALIZAÇÃO ==================== -->
         <section id="localizacao" class="section location">
             <div class="container">
@@ -591,5 +620,12 @@
         💬
     </a>
 
+    <script>
+        // Destaca o dia de hoje na Programação da Semana
+        (function () {
+            var hoje = document.querySelector('.agenda-dia[data-dia="' + new Date().getDay() + '"]');
+            if (hoje) hoje.classList.add('is-hoje');
+        })();
+    </script>
 </body>
 </html>
