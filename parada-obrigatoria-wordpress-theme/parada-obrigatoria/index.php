@@ -75,8 +75,12 @@
             </div>
         </section>
 
+        <!-- ==================== CARDÁPIO ==================== -->
+        <!-- ==================== CARDÁPIO ==================== -->
+        <!-- ==================== CARDÁPIO ==================== -->
         <section id="cardapio" class="section section-dark">
             <div class="container">
+
                 <div class="section-title">
                     <span>🍽️</span>
                     <p>Confira nossas opções</p>
@@ -85,198 +89,359 @@
 
                 <div class="menu-intro">
                     <p>
-                        Escolha sua porção, bebida ou drink e venha curtir a
+                        Escolha sua comida, petisco, bebida ou drink e venha curtir a
                         <strong>Parada Obrigatória</strong>.
                     </p>
-                    <span>📸 Clique em qualquer imagem para ampliar</span>
+                    <nav class="menu-jump" aria-label="Partes do cardápio">
+                        <a href="#cardapio-comidas">🍲 Comidas</a>
+                        <a href="#cardapio-bebidas">🍺 Bebidas</a>
+                    </nav>
                 </div>
 
-                <div class="menu-photo-grid">
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-01.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-01.jpg')); ?>" alt="Carne de Sol com Aipim — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Carne de Sol com Aipim</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-02.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-02.jpg')); ?>" alt="Carne de Sol com Purê de Aipim — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Carne de Sol com Purê de Aipim</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-03.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-03.jpg')); ?>" alt="Filé com Fritas — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Filé com Fritas</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-04.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-04.jpg')); ?>" alt="Tripas com Farofa — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Tripas com Farofa</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-05.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-05.jpg')); ?>" alt="Calabresa Acebolada — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Calabresa Acebolada</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-06.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-06.jpg')); ?>" alt="Isca de Frango com Molho Rosé — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Isca de Frango com Molho Rosé</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-07.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-07.jpg')); ?>" alt="Carne de Sol com Fritas — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Carne de Sol com Fritas</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-08.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-08.jpg')); ?>" alt="Arrumadinho — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Arrumadinho</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-09.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-09.jpg')); ?>" alt="Jabá com Farofa d'Água — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Jabá com Farofa d'Água</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-10.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-10.jpg')); ?>" alt="Costela Suína Acebolada — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Costela Suína Acebolada</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-11.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-11.jpg')); ?>" alt="Frango à Passarinho — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Frango à Passarinho</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-12.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-12.jpg')); ?>" alt="Carne de Sol, Salada e Farofa — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Porções</span>
-                            <h3>Carne de Sol, Salada e Farofa</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-13.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-13.jpg')); ?>" alt="Quibe, Coxinha e Pastel — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Petiscos</span>
-                            <h3>Quibe, Coxinha e Pastel</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-14.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-14.jpg')); ?>" alt="Batata Frita e Batatas Especiais — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Petiscos</span>
-                            <h3>Batata Frita e Batatas Especiais</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-15.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-15.jpg')); ?>" alt="Espetinhos e Pão de Alho — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Espetinhos</span>
-                            <h3>Espetinhos e Pão de Alho</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-16.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-16.jpg')); ?>" alt="Cervejas — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Bebidas</span>
-                            <h3>Cervejas</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-17.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-17.jpg')); ?>" alt="Espetinhos e Pão de Alho — opções — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Espetinhos</span>
-                            <h3>Espetinhos e Pão de Alho — opções</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-18.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-18.jpg')); ?>" alt="Destilados — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Bebidas</span>
-                            <h3>Destilados</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-19.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-19.jpg')); ?>" alt="Refrigerantes e Sem Álcool — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Bebidas</span>
-                            <h3>Refrigerantes e Sem Álcool</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-20.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-20.jpg')); ?>" alt="Energéticos — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Bebidas</span>
-                            <h3>Energéticos</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-21.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-21.jpg')); ?>" alt="Long Neck — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Bebidas</span>
-                            <h3>Long Neck</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-22.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-22.jpg')); ?>" alt="Caipirinhas e Drinks — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Drinks</span>
-                            <h3>Caipirinhas e Drinks</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
-                    <a class="menu-photo-card" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-23-caldos.jpg')); ?>" target="_blank" rel="noopener">
-                        <img src="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/menu-23-caldos.jpg')); ?>" alt="Caldo de Camarão, Vaca Atolada e Sururu — Parada Obrigatória">
-                        <div class="menu-photo-caption">
-                            <span>Caldo</span>
-                            <h3>Caldo de Camarão, Vaca Atolada e Sururu</h3>
-                            <small>Toque/clique para ampliar</small>
-                        </div>
-                    </a>
+                <h3 id="cardapio-comidas" class="menu-group-title">Comidas</h3>
+                <div class="menu-board">
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🍲</span>
+                            <h4>Comidas</h4>
+                            <small>Pratos servidos para 2 ou 4 pessoas</small>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <span class="menu-item-name">Feijoada</span>
+                                <small class="menu-item-desc">Arroz • salada • farofa</small>
+                                <div class="menu-item-line menu-item-variant"><span>2 pessoas</span><span class="menu-item-price">R$ 40,00</span></div>
+                                <div class="menu-item-line menu-item-variant"><span>4 pessoas</span><span class="menu-item-price">R$ 60,00</span></div>
+                            </li>
+                            <li>
+                                <span class="menu-item-name">Dobradinha</span>
+                                <small class="menu-item-desc">Arroz • pirão • salada</small>
+                                <div class="menu-item-line menu-item-variant"><span>2 pessoas</span><span class="menu-item-price">R$ 40,00</span></div>
+                                <div class="menu-item-line menu-item-variant"><span>4 pessoas</span><span class="menu-item-price">R$ 60,00</span></div>
+                            </li>
+                            <li>
+                                <span class="menu-item-name">Mocofato</span>
+                                <small class="menu-item-desc">Arroz • pirão • salada</small>
+                                <div class="menu-item-line menu-item-variant"><span>2 pessoas</span><span class="menu-item-price">R$ 40,00</span></div>
+                                <div class="menu-item-line menu-item-variant"><span>4 pessoas</span><span class="menu-item-price">R$ 60,00</span></div>
+                            </li>
+                            <li>
+                                <span class="menu-item-name">Carne de panela com verduras</span>
+                                <small class="menu-item-desc">Arroz • pirão • salada</small>
+                                <div class="menu-item-line menu-item-variant"><span>2 pessoas</span><span class="menu-item-price">R$ 40,00</span></div>
+                                <div class="menu-item-line menu-item-variant"><span>4 pessoas</span><span class="menu-item-price">R$ 60,00</span></div>
+                            </li>
+                            <li>
+                                <span class="menu-item-name">Rabada</span>
+                                <small class="menu-item-desc">Arroz • pirão • salada</small>
+                                <div class="menu-item-line menu-item-variant"><span>2 pessoas</span><span class="menu-item-price">R$ 40,00</span></div>
+                                <div class="menu-item-line menu-item-variant"><span>4 pessoas</span><span class="menu-item-price">R$ 60,00</span></div>
+                            </li>
+                            <li>
+                                <span class="menu-item-name">Frango cozido com verduras</span>
+                                <small class="menu-item-desc">Arroz • feijão • salada</small>
+                                <div class="menu-item-line menu-item-variant"><span>2 pessoas</span><span class="menu-item-price">R$ 30,00</span></div>
+                                <div class="menu-item-line menu-item-variant"><span>4 pessoas</span><span class="menu-item-price">R$ 50,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🥣</span>
+                            <h4>Caldos</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Camarão</span><span class="menu-item-price">R$ 25,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Vaca atolada</span><span class="menu-item-price">R$ 20,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Sururu</span><span class="menu-item-price">R$ 25,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🥖</span>
+                            <h4>Pão de Alho</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Tradicional</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Queijo</span><span class="menu-item-price">R$ 14,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Calabresa</span><span class="menu-item-price">R$ 18,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Carne seca com banana</span><span class="menu-item-price">R$ 18,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🍟</span>
+                            <h4>Porções e Petiscos</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Feijão tropeiro</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Arroz</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Vinagrete</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Farofa</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Batata frita</span><span class="menu-item-price">R$ 20,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Batata frita com queijo e bacon</span><span class="menu-item-price">R$ 30,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Coxinha</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Quibe</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Pastel frango</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Pastel carne</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🍢</span>
+                            <h4>Espetinhos</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Contra filé</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Alcatra</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Carne do Sol</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Fraldinha</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Cupim</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Medalhão</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Coração</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Queijo</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Tulipa</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Frango</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Toscana</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Apimentada</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Kafta</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Picanha suína</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Lombo suíno</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
+
+                <h3 id="cardapio-bebidas" class="menu-group-title">Bebidas</h3>
+                <div class="menu-board">
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🍺</span>
+                            <h4>Cervejas 600 ml</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Skol</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Amstel</span><span class="menu-item-price">R$ 14,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Brahma</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Antártica original</span><span class="menu-item-price">R$ 14,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Stella Gold</span><span class="menu-item-price">R$ 18,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Heineken</span><span class="menu-item-price">R$ 18,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🍾</span>
+                            <h4>Long Neck</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Heineken</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Corona</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Stella Gold</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Amstel ultra</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Corona zero</span><span class="menu-item-price">R$ 12,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Ice Cabaré</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🥃</span>
+                            <h4>Destilados</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Whisky Red label</span><span class="menu-item-price">R$ 15,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Whisky Old parr</span><span class="menu-item-price">R$ 18,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Whisky Ballantines</span><span class="menu-item-price">R$ 15,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Whisky cavalo branco</span><span class="menu-item-price">R$ 15,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Campari</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🍹</span>
+                            <h4>Caipirinhas e Drinks</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Caipirinha</span><span class="menu-item-price">R$ 18,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Caipirosca</span><span class="menu-item-price">R$ 22,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Morangorosca</span><span class="menu-item-price">R$ 22,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Coquetel de frutas</span><span class="menu-item-price">R$ 20,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🥤</span>
+                            <h4>Refrigerantes e Sem Álcool</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Água mineral (sem gás)</span><span class="menu-item-price">R$ 3,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Água com gás</span><span class="menu-item-price">R$ 5,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">H<sub>2</sub>O</span><span class="menu-item-price">R$ 8,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Coca-cola lata zero</span><span class="menu-item-price">R$ 7,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Coca-cola lata</span><span class="menu-item-price">R$ 7,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Fanta laranja</span><span class="menu-item-price">R$ 7,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Guaraná lata</span><span class="menu-item-price">R$ 7,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">🧃</span>
+                            <h4>Refrigerante 1L</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Coca zero</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Coca</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Guaraná</span><span class="menu-item-price">R$ 10,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-card">
+                        <header class="menu-card-header">
+                            <span class="menu-card-icon" aria-hidden="true">⚡</span>
+                            <h4>Energéticos</h4>
+                        </header>
+                        <ul class="menu-items">
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">RedBull</span><span class="menu-item-price">R$ 15,00</span></div>
+                            </li>
+                            <li>
+                                <div class="menu-item-line"><span class="menu-item-name">Monster</span><span class="menu-item-price">R$ 15,00</span></div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="menu-downloads">
+                    <p>Prefere ver o cardápio original?</p>
+                    <div class="menu-downloads-buttons">
+                        <a class="btn btn-outline" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/cardapio-comidas.jpg')); ?>" target="_blank" rel="noopener">📄 Cardápio de comidas</a>
+                        <a class="btn btn-outline" href="<?php echo esc_url(get_theme_file_uri('/assets/cardapio/cardapio-bebidas.jpg')); ?>" target="_blank" rel="noopener">📄 Cardápio de bebidas</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -339,11 +504,11 @@
 
                             <p class="address">
                                 <strong>Endereço:</strong><br>
-                                2º TV Manoel Chaves, 2359<br>
+                                2ª Trav Manoel Souza Chaves, 2359<br>
                                 São Caetano
                             </p>
 
-                            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=2%C2%BA+TV+Manoel+Chaves+2359+S%C3%A3o+Caetano" target="_blank" rel="noopener noreferrer">
+                            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=2%C2%AA+Travessa+Manoel+Souza+Chaves+2359+S%C3%A3o+Caetano+Itabuna+BA" target="_blank" rel="noopener noreferrer">
                                 📍 Abrir no Google Maps
                             </a>
                         </div>

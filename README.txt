@@ -5,10 +5,12 @@ Estrutura:
 - style.css
 - assets/logo.png
 - assets/card-inauguracao.jpg
-- assets/cardapio/ (23 imagens do cardápio)
+- assets/cardapio/cardapio-comidas.jpg e cardapio-bebidas.jpg (cardápio original em imagem)
 
-O cardápio agora aparece como uma galeria de fotos.
-Cada imagem pode ser clicada para abrir em tamanho maior.
+O cardápio aparece em texto (itens e preços), dividido em Comidas e Bebidas.
+Para mudar um preço, edite o valor direto na seção CARDÁPIO do index.html
+(e também no index.php do tema WordPress).
+No fim da seção há botões para abrir o cardápio original em imagem.
 
 Para testar:
 1. Abra esta pasta no VS Code.

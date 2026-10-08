@@ -264,74 +264,164 @@ a {
 
 .menu-intro p {
     font-size: 1.05rem;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 
 .menu-intro strong {
     color: var(--yellow);
 }
 
-.menu-intro span {
-    display: inline-block;
-    font-size: 0.82rem;
-    color: #777;
+.menu-jump {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.menu-photo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.menu-jump a {
+    padding: 8px 20px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: 0.25s ease;
 }
 
-.menu-photo-card {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    background: #121212;
+.menu-jump a:hover {
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.menu-group-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 50px 0 22px;
+    color: var(--yellow);
+    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    scroll-margin-top: 110px;
+}
+
+.menu-group-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, var(--yellow), transparent);
+}
+
+.menu-board {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.menu-card {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    padding: 24px 24px 18px;
+    background: linear-gradient(145deg, #1a1a1a, #101010);
     border: 1px solid #292929;
     border-radius: 14px;
-    transition: 0.3s ease;
+    transition: border-color 0.25s ease;
 }
 
-.menu-photo-card:hover {
-    transform: translateY(-6px);
+.menu-card:hover {
     border-color: var(--yellow);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
 }
 
-.menu-photo-card img {
-    width: 100%;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    transition: 0.4s ease;
+.menu-card-header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #2a2a2a;
 }
 
-.menu-photo-card:hover img {
-    transform: scale(1.035);
+.menu-card-icon {
+    font-size: 1.5rem;
 }
 
-.menu-photo-caption {
-    padding: 14px 16px 17px;
-    background: linear-gradient(180deg, #181818, #101010);
-}
-
-.menu-photo-caption span {
+.menu-card-header h4 {
     color: var(--yellow);
+    font-size: 1.25rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 0.7rem;
-    font-weight: 900;
+    letter-spacing: 0.5px;
 }
 
-.menu-photo-caption h3 {
-    margin: 4px 0 2px;
-    font-size: 1rem;
-    line-height: 1.25;
+.menu-card-header small {
+    width: 100%;
+    color: #888;
+    font-size: 0.8rem;
 }
 
-.menu-photo-caption small {
-    color: #777;
-    font-size: 0.72rem;
+.menu-items {
+    list-style: none;
+}
+
+.menu-items li {
+    padding: 7px 0;
+    border-bottom: 1px dashed #262626;
+}
+
+.menu-items li:last-child {
+    border-bottom: 0;
+}
+
+.menu-item-line {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.menu-item-line::before {
+    content: "";
+    order: 1;
+    flex: 1;
+    min-width: 12px;
+    border-bottom: 1px dotted #444;
+}
+
+.menu-item-price {
+    order: 2;
+    color: var(--yellow);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.menu-item-name {
+    font-weight: 700;
+}
+
+.menu-item-desc {
+    display: block;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.menu-item-variant {
+    padding-left: 12px;
+    color: #ccc;
+    font-size: 0.92rem;
+}
+
+.menu-downloads {
+    margin-top: 30px;
+    text-align: center;
+    color: #999;
+}
+
+.menu-downloads p {
+    margin-bottom: 14px;
+}
+
+.menu-downloads-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .inauguration {
@@ -514,10 +604,6 @@ a {
 }
 
 @media (max-width: 950px) {
-    .menu-photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .nav-container {
         flex-direction: column;
         padding: 14px 0;
@@ -602,17 +688,12 @@ a {
     }
 }
 
-@media (max-width: 600px) {
-    .menu-photo-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
+@media (max-width: 700px) {
+    .menu-board {
+        columns: 1;
     }
 
-    .menu-photo-caption {
-        padding: 12px 14px 14px;
-    }
-
-    .menu-photo-caption h3 {
-        font-size: 0.95rem;
+    .menu-card {
+        padding: 20px 18px 14px;
     }
 }
